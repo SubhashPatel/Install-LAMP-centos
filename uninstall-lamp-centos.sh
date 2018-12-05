@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 #######################################
@@ -26,6 +25,6 @@ yum remove -y epel-release
 sudo remove -y install phpmyadmin
 
 # Clean File
-yum autoremove
+yum -y autoremove
 
 echo LAMP server uninstallation completed.
