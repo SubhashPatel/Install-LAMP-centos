@@ -63,8 +63,9 @@ systemctl status mysqld.service
 
 # Install PhpMyAdmin
 yum install -y epel-release
-rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
-yum --enablerepo=remi install phpmyadmin
+sudo yum -y install phpmyadmin
 
 # Restart Apache
 systemctl restart httpd
+
+echo LAMP server installation completed, you need to configure PhpMyAdmin for remotely access at /etc/httpd/conf.d/phpMyAdmin.conf
