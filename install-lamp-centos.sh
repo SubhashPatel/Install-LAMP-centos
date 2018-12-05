@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #######################################
-# Bash script to install an LAMP stack in ubuntu
+# Bash script to install an LAMP stack in CentOS
 # Author: Subhash (serverkaka.com)
 
 # Check if running as root
