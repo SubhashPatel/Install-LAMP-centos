@@ -14,6 +14,9 @@ fi
 read -p 'db_root_password [secretpasswd]: ' db_root_password
 echo
 
+# prerequisite
+yum install -y wget
+
 # Install APache
 yum install -y httpd
 systemctl start httpd
@@ -59,7 +62,7 @@ EOSQL
 systemctl status mysqld.service
 
 # Install PhpMyAdmin
-yum install epel-release
+yum install -y epel-release
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 yum --enablerepo=remi install phpmyadmin
 
